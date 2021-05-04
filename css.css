@@ -21,22 +21,6 @@ body {
   width: 100%;
 }
 
-#buttons {
-  padding: 10px;
-  display: flex;
-  justify-content: center;}
-
-#buttons div {
-  padding: 10px;
-  padding-top: 5px;
-  border: 1px solid black;
-  width: 100px;
-  height: auto;
-  padding-bottom: 10px;
-  text-align: center;
-
-}
-
 button {
   cursor: pointer;
   background-color: #fff;
@@ -76,6 +60,27 @@ span.worldtile:hover {
   background-color: #a6a6a6;
   cursor: pointer;
 }
+
+
+
+
+#buttons {
+  padding: 10px;
+  display: flex;
+  justify-content: center;}
+
+#buttons #div {
+  padding: 10px;
+  padding-top: 5px;
+  border: 1px solid black;
+  width: 100px;
+  height: auto;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+
 
 a {
   color: #424242;
