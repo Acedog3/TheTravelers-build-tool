@@ -1,0 +1,86 @@
+html, body, div, h1, h2, p{
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: white;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  word-break: break-word;
+  -webkit-appearance: none;
+}
+
+*{
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+}
+
+body {
+  position: relative;
+  background-color: rgba(0,0,0,0);
+  height: 100%;
+  width: 100%;
+}
+
+#buttons {
+  padding: 10px;
+  display: flex;
+  justify-content: center;}
+
+#buttons div {
+  padding: 10px;
+  padding-top: 5px;
+  border: 1px solid black;
+  width: 100px;
+  height: auto;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid black;
+  padding-top: 1px;
+}
+
+button:active {
+  background-color: #d4d4d4;
+  background-color: #d4d4d4;
+}
+
+input {
+  border: 1px solid black;
+}
+
+#world-box {
+  border: 1px solid black;
+  width: 625px;
+  height: 625px;
+  margin: 5px auto;
+  padding: 10px 0 6px 15px;
+  line-height: 1;
+  text-align: left;
+}
+
+span.worldtile {
+  -webkit-touch-callout: none; /* iOS Safari */ -webkit-user-select: none; /* Safari */ -khtml-user-select: none; /* Konqueror HTML */ -moz-user-select: none; /* Old versions of Firefox */ -ms-user-select: none; /* Internet Explorer/Edge */ user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */ 
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  float: left;
+}
+
+span.worldtile:hover {
+  background-color: #a6a6a6;
+  cursor: pointer;
+}
+
+a {
+  color: #424242;
+}
+
+a:hover {
+  text-decoration: underline;
+}
