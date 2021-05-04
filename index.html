@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -45,23 +46,25 @@ dont worry, i didnt write all of this by hand
 		<br> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-1">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-2">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-3">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-4">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-5">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-6">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-7">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-8">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-9">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-10">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-11">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-12">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-13">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-14">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-15">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-16">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-17">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-18">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-19">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-20">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-21">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-22">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-23">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-24">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-25">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-26">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-27">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-28">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-29">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-30">&nbsp;</span> <span onMousedown="change(this.id, document.getElementById('currentPencilInput').value)" class="worldtile unselectable" id="31-31">&nbsp;</span> </div>
 	<br>
 	<div id="buttons">
-		<div>
-		change all tiles:
+		<div id="box">change all tiles:
 			<input id="changeallInput" style="width: 50px;">
 			<button onClick="changeAll(document.getElementById('changeallInput').value)">set</button>
 			<br> preset:
 			<br>
-			<button onClick="changeAll('&nbsp;')">set blank</button>
+			<button onClick="changeAll('&nbsp;')">set blank</button><div style="padding: 1px;"></div>
 			<button onClick="changeAll('W')">set ocean</button>
-			<br> </div>
+			<br></div><div style="padding: 2px;"></div>
 		
-		<div>
-		pencil tool:
+		<div id="box">pencil tool:
 			<br>
-			<input value="+" id="currentPencilInput" style="text-align: center; width: 50px;">
+			<input value="+" id="currentPencilInput" style="text-align: center; width: 50px;"><div style="padding: 1px;"></div>
 			<button onClick="document.getElementById('currentPencilInput').value = '<b>#</b>'">set bold</button>
-<br><br><span style="font-size: 13px;">leave blank for eraser</span>
-		</div>
+<br><br><span style="font-size: 13px;">leave blank for eraser</span></div><div style="padding: 2px;"></div>
+
+		<div id="box"><br><br>dark mode coming never</div>
+
+
+
 	</div>
 	<script>
 	changeAll('&nbsp');
@@ -72,7 +75,6 @@ dont worry, i didnt write all of this by hand
 	function changeAll(character) {
 		$(".worldtile").html(character);
 	}
-
 	</script>
 	</body>
 
