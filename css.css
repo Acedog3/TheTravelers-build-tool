@@ -84,6 +84,7 @@ span.worldtile:hover {
 
 a {
   color: #424242;
+  text-decoration: none;
 }
 
 a:hover {
